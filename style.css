@@ -25,17 +25,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 body {
     background-color: var(--Off-Black);
-
+    padding: 2rem;
 }
 
 .container {
+    display: block;
     background-color: var(--Dark-Grey);
     padding: 2rem;
     border-radius: 1rem;
+    width: 100%;
+    max-width: 30rem;
+    min-width: 375px;
 }
 
 .user-profile img {
@@ -67,9 +72,15 @@ body {
 .link {
     background-color: var(--Grey);
     font-weight: 500;
-    width: 30rem;
     padding: 1rem;
     margin: 1.5rem 2rem;
     border-radius: 0.5rem;
     text-align: center;
+}
+
+.link:hover {
+    background-color: var(--Green);
+    color: var(--Off-Black);
+    transition: ease-in-out .25s;
+    cursor: pointer;
 }
